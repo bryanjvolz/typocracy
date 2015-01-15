@@ -1,0 +1,150 @@
+/*------------------------------------------------------------------------------------------------------------------------
+ @package: typocracy (app)
+
+ @author: Bryan V
+ @www: typocracy.net
+ @github: typocracy
+
+ @twitter: typocracy
+
+ @copyright: COPYRIGHT 1-5-2015 Typocracy
+ =============================================================================
+ Filename: style.scss
+ =============================================================================
+ This file is responsible for all styles on the typocracy app.  Styles should be compiled using compass and sass.
+ --------------------------------------------------------------------------------------------------------------------- */
+
+@import 'partials/normalize';
+
+/* =============================================================================
+Main Styles
+========================================================================== */
+
+* {
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'verb_blackregular';
+    src: url('fonts/verb/VerbBlack-webfont.eot');
+    src: url('fonts/verb/VerbBlack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/verb/VerbBlack-webfont.woff') format('woff'),
+         url('fonts/verb/VerbBlack-webfont.ttf') format('truetype'),
+         url('fonts/verb/VerbBlack-webfont.svg#verb_blackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'verb_regularregular';
+    src: url('fonts/verb/VerbRegular-webfont.eot');
+    src: url('fonts/verb/VerbRegular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/verb/VerbRegular-webfont.woff') format('woff'),
+         url('fonts/verb/VerbRegular-webfont.ttf') format('truetype'),
+         url('fonts/verb/VerbRegular-webfont.svg#verb_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/****** Main Stuffs ******/
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #353634 url('/img/goat-2014-sm.jpg') top center no-repeat fixed;
+  font-family: 'Verb', helvetica, arial, sans-serif;
+  background: cover;
+
+  @media screen and (min-width: 1200px){
+    background: #353634 url('/img/goat-2014.jpg') center center no-repeat fixed;
+  }
+}
+
+.info {
+  /* background: #2B2B2B; */
+  background: rgba(0,0,0,.65);
+  color: #F2E3C6;
+  margin: 1.5em auto;
+  padding: .5em;
+  max-width: 450px;
+  transition: .4s ease all;
+  width: 95%;
+
+  @media screen and (min-width: 650px){
+    margin: 2em 0 0 2em;
+    padding: .75em;
+    width: auto;
+  }
+  @media screen and (min-width: 650px){
+    max-width: 550px;
+  }
+  @media screen and (min-width: 1100px){
+    max-width: 625px;
+  }
+}
+
+h1 {
+  font-family: 'verb_blackregular',helvetica,arial,sans-serif;
+  font-size: 3.25em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  line-height: 1.25em;
+  @media screen and (min-width: 650px){
+    font-size: 4em;
+  }
+  @media screen and (min-width: 1100px){
+    font-size: 5em;
+  }
+}
+h2 {
+  font-family: 'verb_blackregular',helvetica,arial,sans-serif;
+  font-size: .75em;
+  font-weight: normal;
+  margin: 0 0 .5em 0;
+  padding: 0;
+  @media screen and (min-width: 650px){
+    font-size: 1em;
+  }
+  @media screen and (min-width: 1100px){
+    font-size: 1.25em;
+  }
+}
+p {
+  font-family: 'verb_regularregular',helvetica,arial,sans-serif;
+  line-height: 1.15em;
+  font-size: 1.15em;
+
+  @media screen and (min-width: 650px){
+    font-size: 1.25em;
+  }
+  @media screen and (min-width: 1100px){
+    font-size: 1.75em;
+  }
+
+  a:link {
+    color: #E6324B;
+    transition: .3s ease all;
+  }
+  a:hover, a:active {
+    color: darken(#E6324B,5%);
+    background: darken(#E6324B,20%);
+  }
+
+  a:visited {
+    color: darken(#E6324B,15%);
+    background: darken(#E6324B,40%);
+  }
+}
+
