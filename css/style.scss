@@ -52,6 +52,18 @@ Main Styles
 }
 
 
+/**** Keyframes ****/
+@keyframes fadeIn {
+  0% {
+    opacity: .1;
+    transform: translate(0,-25%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%);
+  }
+}
+
 
 
 /****** Main Stuffs ******/
@@ -72,7 +84,7 @@ body {
 }
 
 .info {
-  /* background: #2B2B2B; */
+  animation: fadeIn 3s both;
   background: rgba(0,0,0,.65);
   color: #F2E3C6;
   margin: 1.5em auto;
