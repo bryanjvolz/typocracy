@@ -1,5 +1,30 @@
 {
-	"name": "typocracy",
-	"version": "0.0.0",
-	"dependencies": {}
+ "name": "typocracy",
+ "version": "0.0.1",
+ "description": "Typocracy.net web files",
+ "author": {
+  "name": "Bryan V",
+  "email": "bryanjvolz+dontspamme@gmail.com",
+  "url": "http://www.bryanvolz.com/"
+ },
+ "repository": {
+  "type": "git",
+  "url": "https://github.com/"
+ },
+ "license": "UNLICENSED",
+ "main": "gulpfile.js",
+ "private": true,
+ "homepage": "http://www.bryanvolz.com/",
+ "dependencies": {
+  "browser-sync": "^2.18.13",
+  "gulp": "^3.9.1",
+  "gulp-sass": "^3.1.0",
+  "gulp-sourcemaps": "^2.6.1",
+  "gulp-uglifycss": "^1.0.8"
+ },
+ "devDependencies": {
+  "pump": "^1.0.2",
+  "gulp-autoprefixer": "^4.0.0",
+  "gulp-uglify": "^3.0.0"
+ }
 }
