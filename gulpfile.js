@@ -11,23 +11,29 @@ var uglifycss = require('gulp-uglifycss');
 
 
 gulp.task('default', () =>
-gulp.src('./css/partials*.scss')
-    .pipe(autoprefixer({
-        browsers: ['last 2 versions'],
-        cascade: false
-    }))
-    .pipe(gulp.dest('./css'))
+gulp.src('./css/**/*.scss')
+  .pipe(sourcemaps.init())
+  .pipe(sass().on('error', sass.logError))
+  .pipe(autoprefixer({
+    browsers: ['last 2 versions'],
+    cascade: false
+  }))
+  .pipe(gulp.dest('./css'))
 );
 
 gulp.task('sass', function () {
- gulp.src('./css/partials/*.scss')
+ gulp.src('./css/**/*.scss')
   .pipe(sourcemaps.init())
-   .pipe(sass().on('error', sass.logError))
-   .pipe(uglifycss({
-      "maxLineLen": 80,
-      "uglyComments": false
-    }))
-   .pipe(sourcemaps.write())
+  .pipe(sass().on('error', sass.logError))
+  .pipe(autoprefixer({
+    browsers: ['last 2 versions'],
+    cascade: false
+  }))
+  .pipe(uglifycss({
+    "maxLineLen": 80,
+    "uglyComments": false
+  }))
+  .pipe(sourcemaps.write())
   .pipe(gulp.dest('./css'));
 });
 
@@ -47,11 +53,11 @@ gulp.task('browser-sync', function() {
 
 // Watch
 gulp.task('sass:watch', function () {
-  gulp.watch('./css/partials/*.scss', ['sass']);
+  gulp.watch('./css/**/*.scss', ['sass']);
  });
 
 // Watch files for changes, recompile/rebuild and reload the browser
 gulp.task('watch', function() {
   // No browser reload needed here, browserSync injects the stylesheet into browsers
-  gulp.watch('./css/partials/*.scss', ['sass']);
+  gulp.watch('./css/**/*.scss', ['sass']);
 });

@@ -1,0 +1,19 @@
+/* =============================================================================
+Variables
+========================================================================== */
+
+$transition: .3s ease all;
+$transition-slow: .5s ease all;
+
+$bp-small:      "screen and (mid-width: 650px)" !default;
+$bp-mid:        "screen and (min-width: 768px)" !default;
+$bp-wide--home: "screen and (min-width: 1100px)" !default;
+$bp-wide:       "screen and (min-width: 1200px)" !default;
+$bp-x-wide:     "screen and (min-width: 2400px)" !default;
+
+$verb-black:    'verb_blackregular', helvetica, Arial, sans-serif;
+$verb-semibold: 'verb_semiboldregular', helvetica, Arial, sans-serif;
+$verb-regular:  'verb_regularregular',helvetica,arial,sans-serif;
+$verb-base:     'Verb', helvetica, arial, sans-serif;
+
+$resume-container: 1000px;

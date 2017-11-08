@@ -1,0 +1,36 @@
+/* =============================================================================
+Fonts
+========================================================================== */
+
+@font-face {
+    font-family: 'verb_blackregular';
+    src: url('fonts/verb/VerbBlack-webfont.eot');
+    src: url('fonts/verb/VerbBlack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/verb/VerbBlack-webfont.woff') format('woff'),
+         url('fonts/verb/VerbBlack-webfont.ttf') format('truetype'),
+         url('fonts/verb/VerbBlack-webfont.svg#verb_blackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'verb_regularregular';
+    src: url('fonts/verb/VerbRegular-webfont.eot');
+    src: url('fonts/verb/VerbRegular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/verb/VerbRegular-webfont.woff') format('woff'),
+         url('fonts/verb/VerbRegular-webfont.ttf') format('truetype'),
+         url('fonts/verb/VerbRegular-webfont.svg#verb_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'verb_semiboldregular';
+  src: url('fonts/verb/VerbSemibold-webfont.eot');
+  src: url('fonts/verb/VerbSemibold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/verb/VerbSemibold-webfont.woff') format('woff'),
+       url('fonts/verb/VerbSemibold-webfont.ttf') format('truetype'),
+       url('fonts/verb/VerbSemibold-webfont.svg#verb_semiboldregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,215 @@
+/* =============================================================================
+Resume
+========================================================================== */
+
+.resume {
+  background-image: url('/img/test_bg.jpg');
+  background-size: 1400px;
+  background-position: top center;
+  background-repeat: repeat-x;
+  font-size: 100%;
+  font-family: 'verb_regularregular';
+  line-height: 1.35rem;
+  overflow-x: hidden;
+
+  main {
+    max-width: $resume-container;
+    margin: 3rem auto;
+    padding: 0 5%;
+
+    @media #{$bp-mid} {
+      padding: 0;
+    }
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(0,0,0,.25);
+    padding-bottom: 1.5rem;
+
+    h1 {
+      border: none;
+      font-size: 5rem;
+      line-height: 4.25rem;
+      margin: 0 0 1rem 0;
+      @media #{$bp-small}{
+        line-height: 3rem;
+      }
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin: 0 0 .75rem 0;
+    }
+    p {
+      font-weight: 100;
+      margin: 0;
+    }
+  }
+
+  ul { padding: 0; }
+  li {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+
+  dd {
+    margin-bottom: 1rem;
+    margin-left: 0;
+  }
+
+  /* Columns, pull em up by the pseudo-bootstraps */
+  .row {
+    display: block;
+    margin-right: -15px;
+    margin-left: -15px;
+    clear: both;
+  }
+
+  .row:before,.row:after {
+    display: table;
+    content: " ";
+  }
+
+  .col-md-6 {
+    min-height: 1px;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    @media screen and (min-width: $resume-container) {
+      float: left;
+      width: 50%;
+    }
+  }
+
+  a:link, a:visited {
+    color: #666;
+    text-decoration: none;
+    position: relative;
+
+    &:hover {
+      color: #f1f1f1;
+
+      &:after {
+        background: rebeccapurple;
+        height: 115%;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      height: 2px;
+      left: -0.15em;
+      background: lighten(rebeccapurple,25%);
+      transition: $transition;
+      width: calc(100% + 0.3em);
+      z-index: -1;
+    }
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: $verb-black;
+  }
+
+  h1 {
+    border-bottom: 1px solid black;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .semibold {
+    font-family: $verb-semibold;
+    font-weight: 300;
+  }
+
+  /* Sections */
+  .resume-experience {
+    dt {
+      font-family: $verb-black;
+      font-size: 1.35rem;
+    }
+    dd {
+      margin-left: 0;
+      margin-bottom: 1.5rem;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      list-style: none;
+      margin-bottom: .25rem;
+    }
+  }
+
+}
+
+.resume-experience__date {
+  display: inline-block;
+  font-family: $verb-regular;
+  font-weight: 100;
+  font-size: .95rem;
+  margin-left: 1rem;
+}
+.resume-experience__position {
+  display: block;
+  font-size: 1.25rem;
+}
+
+.resume__education-degree {
+  margin-bottom: 0;
+}
+
+.resume__education-school {
+  margin-top: 0;
+}
+
+.resume-tech ul li {
+  margin-bottom: .25rem;
+}
+
+.resume__footer {
+  border-top: 1px solid rgba(0,0,0,.25);
+  clear: both;
+  font-size: .85rem;
+  margin-top: 1rem;
+  padding: 1rem;
+
+  @media #{$bp-mid}{
+    text-align: center;
+  }
+}
+
+.resume .footer__list {
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: block;
+    list-style: none;
+    padding: 0 .5rem;
+
+    @media #{$bp-mid}{
+      display: inline-block
+    }
+  }
+}
+
+.resume a.footer__link {
+  color: rgba(0,0,0,.25);
+  text-decoration: none;
+  transition: .3s ease color;
+
+  &:after {
+    display: none;
+    visibility: hidden;
+  }
+
+  &:hover {
+    color: rgba(40,40,40,1);
+
+  }
+}
