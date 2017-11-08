@@ -1,6 +1,8 @@
 #################
-## Eclipse
+## GitIgnore
 #################
+
+# General
 
 *.pydevproject
 .project
@@ -10,23 +12,20 @@ tmp/
 *.tmp
 *.bak
 *.swp
-*~.nib
-local.properties
-.classpath
-.settings/
-.loadpath
 
-# External tool builders
-.externalToolBuilders/
+./themes
 
-# Locally stored "Eclipse launch configurations"
-*.launch
 
-# CDT-specific
-.cproject
+# Mac crap
+.DS_Store
 
-# PDT-specific
-.buildpath
+.idea
+
+node_modules
+js/components
+.sass-cache
+
+codekit-config.json
 
 
 #################
@@ -113,59 +112,3 @@ Generated_Code #added for RIA/Silverlight projects
 _UpgradeReport_Files/
 Backup*/
 UpgradeLog*.XML
-
-
-
-############
-## Windows
-############
-
-# Windows image file caches
-Thumbs.db
-
-# Folder config file
-Desktop.ini
-
-
-#############
-## Python
-#############
-
-*.py[co]
-
-# Packages
-*.egg
-*.egg-info
-dist
-build
-eggs
-parts
-bin
-var
-sdist
-develop-eggs
-.installed.cfg
-
-# Installer logs
-pip-log.txt
-
-# Unit test / coverage reports
-.coverage
-.tox
-
-#Translations
-*.mo
-
-#Mr Developer
-.mr.developer.cfg
-
-# Mac crap
-.DS_Store
-
-.idea
-
-node_modules
-js/components
-.sass-cache
-
-codekit-config.json
