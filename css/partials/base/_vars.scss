@@ -5,7 +5,7 @@ Variables
 $transition: .3s ease all;
 $transition-slow: .5s ease all;
 
-$bp-small:      "screen and (mid-width: 650px)" !default;
+$bp-small:      "screen and (min-width: 650px)" !default;
 $bp-mid:        "screen and (min-width: 768px)" !default;
 $bp-wide--home: "screen and (min-width: 1100px)" !default;
 $bp-wide:       "screen and (min-width: 1200px)" !default;

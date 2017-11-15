@@ -13,13 +13,13 @@
  =============================================================================
  --------------------------------------------------------------------------------------------------------------------- */
 
-@import 'normalize';
-@import 'icomoon/icomoon';
+@import 'partials/normalize';
+@import 'partials/icomoon/icomoon';
 
-@import 'base/vars';
-@import 'base/base';
-@import 'base/fonts';
-@import 'base/animation';
+@import 'partials/base/vars';
+@import 'partials/base/base';
+@import 'partials/base/fonts';
+@import 'partials/base/animation';
 
-@import 'modules/homepage';
-@import 'modules/resume';
+@import 'partials/modules/homepage';
+@import 'partials/modules/resume';
