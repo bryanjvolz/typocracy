@@ -17,14 +17,14 @@
  "homepage": "http://www.bryanvolz.com/",
  "dependencies": {
   "browser-sync": "^2.24.7",
-  "gulp": "^3.9.1",
-  "gulp-sass": "^3.2.1",
+  "gulp": "^4.0.0",
+  "gulp-sass": "^4.0.1",
   "gulp-sourcemaps": "^2.6.4",
   "gulp-uglifycss": "^1.1.0"
  },
  "devDependencies": {
-  "gulp-autoprefixer": "^4.1.0",
+  "gulp-autoprefixer": "^6.0.0",
   "gulp-uglify": "^3.0.1",
-  "pump": "^1.0.3"
+  "pump": "^3.0.0"
  }
 }
