@@ -106,7 +106,7 @@ Resume
       background: lighten(rebeccapurple,25%);
       bottom: -1px;
       content: '';
-      height: 2px;
+      min-height: 2px;
       left: -0.15em;
       position: absolute;
       transition: $transition-bounce;
