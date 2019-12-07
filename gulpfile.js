@@ -31,6 +31,10 @@ gulp.task('sass', function () {
   }))
   .pipe(sourcemaps.write())
   .pipe(gulp.dest('css'));
+
+  return new Promise(function(resolve, reject) {
+    resolve();
+  });
 });
 
 gulp.task('browser-sync', function() {
