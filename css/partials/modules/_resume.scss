@@ -76,9 +76,9 @@ Resume
   }
 
   .col-md-6 {
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
+    min-height: rem(1);
+    padding-left: rem(15);
+    padding-right: rem(15);
     position: relative;
 
     //@media screen and (min-width: $resume-container) {
@@ -90,23 +90,25 @@ Resume
 
   a:link, a:visited {
     color: #666;
+    display: inline-block;
     position: relative;
     text-decoration: none;
 
     &:hover {
-      color: #f1f1f1;
+      color: get-color(lightGrey);
 
       &:after {
-        background: rebeccapurple;
+        background: get-color(purple);
         height: 115%;
       }
     }
 
     &:after {
-      background: lighten(rebeccapurple,25%);
+      background: lighten(get-color(purple),25%);
       bottom: -1px;
       content: '';
-      min-height: 2px;
+      height: rem(2);
+      min-height: rem(2);
       left: -0.15em;
       position: absolute;
       transition: $transition-bounce;
@@ -120,7 +122,7 @@ Resume
   }
 
   h1 {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid get-color(black);
     line-height: 2rem;
     margin-bottom: 1rem;
   }
@@ -199,7 +201,7 @@ Resume
     padding: 0 .5rem;
 
     @media #{$bp-mid}{
-      display: inline-block
+      display: inline-block;
     }
   }
 }
@@ -216,6 +218,5 @@ Resume
 
   &:hover {
     color: rgba(40,40,40,1);
-
   }
 }

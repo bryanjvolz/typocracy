@@ -1,0 +1,14 @@
+/**
+** Functions
+**/
+
+
+@function rem($pixels, $context: $font-size) {
+  @return #{$pixels/$context}rem;
+}
+
+
+@function get-color($color){
+  $color: map-get($colors-theme, $color);
+  @return $color;
+}

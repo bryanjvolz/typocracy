@@ -3,12 +3,12 @@ Goaty Homepage
 ========================================================================== */
 
 .home {
-  background: #353634 url('../img/goat-2014-sm.jpg') top center no-repeat fixed;
+  background: get-color(darkGrey) url('../img/goat-2014-sm.jpg') top center no-repeat fixed;
   font-family: $verb-base;
   background-size: cover;
 
   @media #{$bp-wide}{
-    background: #353634 url('../img/goat-2017.jpg') center center no-repeat fixed;
+    background: get-color(darkGrey) url('../img/goat-2017.jpg') center center no-repeat fixed;
   }
 
 
@@ -20,17 +20,17 @@ Goaty Homepage
   }
 
   a:link {
-    color: #E6324B;
+    color: get-color(red);
   }
   a:hover{
-    color: darken(#E6324B,5%);
-    background-color: darken(#E6324B,20%);
+    color: darken(get-color(red),5%);
+    background-color: darken(get-color(red),20%);
   }
   a:visited {
-    color: darken(#E6324B,15%);
+    color: darken(get-color(red),15%);
   }
   a:visited:hover {
-    background-color: darken(#E6324B,40%);
+    background-color: darken(get-color(red),40%);
   }
 
   /**** Page elements ****/
@@ -38,7 +38,7 @@ Goaty Homepage
   .info {
     animation: fadeIn 3s both;
     background: rgba(0,0,0,.65);
-    color: #F2E3C6;
+    color: get-color(lightGrey2);
     margin: 1.5em auto;
     padding: .5em;
     max-width: 450px;

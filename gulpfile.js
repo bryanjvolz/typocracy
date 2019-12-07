@@ -45,11 +45,10 @@ gulp.task('browser-sync', function() {
   });
 });
 
-
-
 // Watch
 gulp.task('sass:watch', function () {
   gulp.watch('./css/**/*.scss', ['sass']);
+  browserSync.reload();
  });
 
 // Watch files for changes, recompile/rebuild and reload the browser
