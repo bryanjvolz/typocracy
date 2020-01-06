@@ -1,10 +1,10 @@
 {
  "name": "typocracy",
- "version": "0.0.1",
+ "version": "1.1.0",
  "description": "Typocracy.net web files",
  "author": {
   "name": "Bryan V",
-  "email": "bryanjvolz+dontspamme@gmail.com",
+  "email": "bryan@typocracy.net",
   "url": "http://www.bryanvolz.com/"
  },
  "repository": {
@@ -32,5 +32,8 @@
   "> 1%",
   "maintained node versions",
   "not dead"
- ]
+ ],
+ "scripts": {
+  "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser 'Firefox'"
+}
 }

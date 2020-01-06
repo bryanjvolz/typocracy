@@ -29,6 +29,9 @@ gulp.task('sass', function () {
     "maxLineLen": 80,
     "uglyComments": false
   }))
+  .pipe(autoprefixer({
+    cascade: false
+  }))
   .pipe(sourcemaps.write())
   .pipe(gulp.dest('css'));
 
@@ -51,12 +54,12 @@ gulp.task('browser-sync', function() {
 
 // Watch
 gulp.task('sass:watch', function () {
-  gulp.watch('./css/**/*.scss', ['sass']);
+  gulp.watch('./css/**/*.scss', gulp.series('sass'));
   browserSync.reload();
  });
 
 // Watch files for changes, recompile/rebuild and reload the browser
 gulp.task('watch', function() {
   // No browser reload needed here, browserSync injects the stylesheet into browsers
-  gulp.watch('./css/**/*.scss', ['sass']);
+  gulp.watch('./css/**/*.scss', gulp.series('sass'));
 });

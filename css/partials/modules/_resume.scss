@@ -64,15 +64,13 @@ Resume
 
   /* Columns, pull em up by the pseudo-bootstraps */
   .row {
-    clear: both;
-    display: block;
     margin-left: -15px;
     margin-right: -15px;
-  }
 
-  .row:before,.row:after {
-    display: table;
-    content: " ";
+    @media screen and (min-width: 768px){
+      display: grid;
+      grid-template-columns: auto 1fr 1fr;
+    }
   }
 
   .col-md-6 {
@@ -80,12 +78,6 @@ Resume
     padding-left: rem(15);
     padding-right: rem(15);
     position: relative;
-
-    //@media screen and (min-width: $resume-container) {
-    @media #{$bp-small} {
-      float: left;
-      width: 50%;
-    }
   }
 
   a:link, a:visited {
