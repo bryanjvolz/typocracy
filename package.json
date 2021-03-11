@@ -21,7 +21,7 @@
   "gulp-uglifycss": "^1.1.0"
  },
  "devDependencies": {
-  "browser-sync": "^2.26.7",
+  "browser-sync": "^2.26.14",
   "gulp": "^4.0.2",
   "gulp-autoprefixer": "^6.1.0",
   "gulp-uglify": "^3.0.2",
@@ -35,5 +35,5 @@
  ],
  "scripts": {
   "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser 'Firefox'"
-}
+ }
 }
