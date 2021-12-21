@@ -8,6 +8,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
 var uglifycss = require('gulp-uglifycss');
+var sass = require('gulp-sass')(require('sass'));
 
 
 gulp.task('default', () =>

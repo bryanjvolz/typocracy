@@ -3,6 +3,7 @@ Resume
 ========================================================================== */
 
 .resume {
+  background-color: #fff;
   background-image: url('/img/test_bg.jpg');
   background-position: top center;
   background-repeat: repeat-x;
@@ -156,7 +157,8 @@ Resume
 .resume-experience__position {
   display: block;
   font-size: 1.25rem;
-  line-height: 2rem;
+  line-height: 1.25;
+  margin-bottom: rem(10);
 }
 
 .resume__education-degree {
@@ -199,7 +201,7 @@ Resume
 }
 
 .resume a.footer__link {
-  color: rgba(0,0,0,.25);
+  color: rgba(0,0,0,.55);
   text-decoration: none;
   transition: $transition;
 
@@ -210,5 +212,17 @@ Resume
 
   &:hover {
     color: rgba(40,40,40,1);
+  }
+}
+
+.resume a.resume__download {
+  position: absolute;
+  top: .25em;
+  right: 1em;
+  padding: .25em;
+  &:hover,&:focus {
+    color: #fff;
+    svg { fill: white; }
+    // &:after { height: rem(2); }
   }
 }

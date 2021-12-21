@@ -4,7 +4,9 @@
 
 
 @function rem($pixels, $context: $font-size) {
-  @return #{$pixels/$context}rem;
+  // @return #{$pixels/$context}rem;
+  $remValue: calc($pixels / $context) + rem;
+  @return $remValue;
 }
 
 
