@@ -1,40 +1,43 @@
 {
- "name": "typocracy",
- "version": "1.1.0",
- "description": "Typocracy.net web files",
- "author": {
-  "name": "Bryan V",
-  "email": "bryan@typocracy.net",
-  "url": "http://www.bryanvolz.com/"
- },
- "repository": {
-  "type": "git",
-  "url": "https://github.com/"
- },
- "license": "UNLICENSED",
- "main": "gulpfile.js",
- "private": true,
- "homepage": "http://www.bryanvolz.com/",
- "dependencies": {
-  "gulp-sass": "^5.0.0",
-  "gulp-sourcemaps": "^2.6.5",
-  "gulp-uglifycss": "^1.1.0"
- },
- "devDependencies": {
-  "browser-sync": "^2.27.1",
-  "gulp": "^4.0.2",
-  "gulp-autoprefixer": "^6.1.0",
-  "gulp-uglify": "^3.0.2",
-  "pump": "^3.0.0",
-  "sass": "^1.45.1"
- },
- "browserslist": [
-  "last 1 version",
-  "> 1%",
-  "maintained node versions",
-  "not dead"
- ],
- "scripts": {
-  "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser 'Firefox'"
- }
+  "name": "typocracy",
+  "version": "1.1.0",
+  "description": "Typocracy.net web files",
+  "author": {
+    "name": "Bryan V",
+    "email": "bryan@typocracy.net",
+    "url": "http://www.bryanvolz.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+  "license": "UNLICENSED",
+  "main": "gulpfile.js",
+  "private": true,
+  "homepage": "http://www.bryanvolz.com/",
+  "dependencies": {
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglifycss": "^1.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-uglify": "^3.0.2",
+    "pump": "^3.0.0",
+    "sass": "^1.45.1"
+  },
+  "resolutions": {
+    "glob-parent": "^6.0.1"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "scripts": {
+    "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser 'Firefox'"
+  }
 }
