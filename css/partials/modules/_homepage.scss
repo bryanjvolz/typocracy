@@ -3,12 +3,12 @@ Goaty Homepage
 ========================================================================== */
 
 .home {
-  background: get-color(darkGrey) url('../img/goat-2014-sm.jpg') top center no-repeat fixed;
+  background: get-color(darkGrey) url('../img/goat-2014-sm.webp') top center no-repeat fixed;
   font-family: $verb-base;
   background-size: cover;
 
   @media #{$bp-wide}{
-    background: get-color(darkGrey) url('../img/goat-2017.jpg') center center no-repeat fixed;
+    background: get-color(darkGrey) url('../img/goat-2017.webp') center center no-repeat fixed;
   }
 
 

@@ -526,10 +526,10 @@ Helpers
 ========================================================================== */
 @font-face {
   font-family: "icomoon";
-  src: url("../css/fonts/icomoon/icomoon.eot");
-  src: url("../css/fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.woff") format("woff"), url("../css/fonts/icomoon/icomoon.ttf") format("truetype"), url("../css/fonts/icomoon/icomoon.svg#icomoon") format("svg");
+  src: url("../css/fonts/icomoon/icomoon.ttf") format("truetype"), url("../css/fonts/icomoon/icomoon.svg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 [data-icon]:before, .icon-alert:before, .icon-file-xml:before, .icon-youtube:before, .icon-github-2:before, .icon-html5:before, .icon-share-2:before, .icon-cart-2:before, .icon-pie:before, .icon-stats:before, .icon-lightbulb:before, .icon-map:before, .icon-compass:before, .icon-vcard:before, .icon-aid:before, .icon-database:before, .icon-play-3:before, .icon-play-2:before, .icon-facetime-video:before, .icon-box-remove:before, .icon-box-add:before, .icon-exclamation-sign:before, .icon-lifebuoy:before, .icon-calendar-2:before, .icon-calendar:before, .icon-checkbox-partial:before, .icon-brush:before, .icon-equalizer:before, .icon-tools:before, .icon-puzzle:before, .icon-cube:before, .icon-cord:before, .icon-folder-open:before, .icon-file-add:before, .icon-reply:before, .icon-redo:before, .icon-locked:before, .icon-barcode:before, .icon-opera:before, .icon-IE:before, .icon-firefox:before, .icon-chrome:before, .icon-windows8:before, .icon-apple:before, .icon-skype:before, .icon-soundcloud:before, .icon-vimeo:before, .icon-flickr-2:before, .icon-flickr:before, .icon-facebook-2:before, .icon-google-plus-2:before, .icon-twitter-2:before, .icon-file-powerpoint:before, .icon-checkout:before, .icon-file-css:before, .icon-file-zip:before, .icon-file-excel:before, .icon-file-word:before, .icon-file-openoffice:before, .icon-file-pdf:before, .icon-checkmark-circle:before, .icon-checkmark:before, .icon-sad:before, .icon-happy:before, .icon-road-2:before, .icon-truck-2:before, .icon-airplane:before, .icon-briefcase-2:before, .icon-earth:before, .icon-menu:before, .icon-phone-2:before, .icon-credit-2:before, .icon-coin:before, .icon-cart:before, .icon-pencil-2:before, .icon-image:before, .icon-images:before, .icon-volume-high:before, .icon-drawer-3:before, .icon-drawer-2:before, .icon-drawer:before, .icon-error:before, .icon-skypeonline:before, .icon-comment-2:before, .icon-chat:before, .icon-publish:before, .icon-thumbs-down-2:before, .icon-thumbs-up-2:before, .icon-heart-3:before, .icon-heart-2:before, .icon-users:before, .icon-user-2:before, .icon-forward-2:before, .icon-reply-all:before, .icon-paperclip:before, .icon-quote-right:before, .icon-quote-left:before, .icon-circle-blank:before, .icon-mobile:before, .icon-tablet:before, .icon-laptop:before, .icon-desktop:before, .icon-angle-down:before, .icon-angle-up:before, .icon-medkit:before, .icon-ambulance:before, .icon-hospital:before, .icon-building:before, .icon-file-alt:before, .icon-food:before, .icon-coffee:before, .icon-bell-alt:before, .icon-suitcase:before, .icon-stethoscope:before, .icon-paste:before, .icon-umbrella:before, .icon-sitemap:before, .icon-bolt:before, .icon-comments-alt:before, .icon-comment-alt:before, .icon-dashboard:before, .icon-legal:before, .icon-undo:before, .icon-linkedin:before, .icon-envelope-alt:before, .icon-sort-up:before, .icon-sort-down:before, .icon-sort:before, .icon-columns:before, .icon-caret-right:before, .icon-caret-left:before, .icon-caret-up:before, .icon-caret-down:before, .icon-money:before, .icon-google-plus:before, .icon-google-plus-sign:before, .icon-pinterest:before, .icon-truck:before, .icon-magic:before, .icon-table:before, .icon-underline:before, .icon-strikethrough:before, .icon-list-ol:before, .icon-list-ul:before, .icon-reorder:before, .icon-sign-blank:before, .icon-save:before, .icon-paper-clip:before, .icon-copy:before, .icon-cut:before, .icon-beaker:before, .icon-cloud:before, .icon-link:before, .icon-group:before, .icon-fullscreen:before, .icon-briefcase:before, .icon-filter:before, .icon-tasks:before, .icon-wrench:before, .icon-globe:before, .icon-circle-arrow-down:before, .icon-circle-arrow-up:before, .icon-circle-arrow-right:before, .icon-circle-arrow-left:before, .icon-hand-down:before, .icon-hand-up:before, .icon-hand-left:before, .icon-hand-right:before, .icon-certificate:before, .icon-bell:before, .icon-bullhorn:before, .icon-hdd:before, .icon-rss:before, .icon-credit:before, .icon-unlock:before, .icon-github:before, .icon-facebook:before, .icon-twitter:before, .icon-phone-sign:before, .icon-bookmark-empty:before, .icon-phone:before, .icon-lemon:before, .icon-upload-alt:before, .icon-github-sign:before, .icon-trophy:before, .icon-signin:before, .icon-external-link:before, .icon-pushpin:before, .icon-linkedin-sign:before, .icon-signout:before, .icon-heart-empty:before, .icon-thumbs-down:before, .icon-thumbs-up:before, .icon-comments:before, .icon-cogs:before, .icon-key:before, .icon-facebook-sign:before, .icon-twitter-sign:before, .icon-resize-horizontal:before, .icon-resize-vertical:before, .icon-folder-close:before, .icon-retweet:before, .icon-chevron-down:before, .icon-chevron-up:before, .icon-magnet:before, .icon-comment:before, .icon-random:before, .icon-plane:before, .icon-warning-sign:before, .icon-eye-close:before, .icon-eye-open:before, .icon-fire:before, .icon-leaf:before, .icon-gift:before, .icon-minus:before, .icon-plus:before, .icon-resize-small:before, .icon-resize-full:before, .icon-share-alt:before, .icon-arrow-down:before, .icon-arrow-up:before, .icon-arrow-right:before, .icon-arrow-left:before, .icon-screenshot:before, .icon-info-sign:before, .icon-question-sign:before, .icon-remove-sign:before, .icon-minus-sign:before, .icon-plus-sign:before, .icon-chevron-right:before, .icon-chevron-left:before, .icon-eject:before, .icon-step-forward:before, .icon-fast-forward:before, .icon-forward:before, .icon-stop:before, .icon-pause:before, .icon-play:before, .icon-backward:before, .icon-fast-backward:before, .icon-step-backward:before, .icon-move:before, .icon-share:before, .icon-edit:before, .icon-adjust:before, .icon-map-marker:before, .icon-pencil:before, .icon-picture:before, .icon-indent-right:before, .icon-indent-left:before, .icon-list:before, .icon-align-justify:before, .icon-align-right:before, .icon-align-center:before, .icon-align-left:before, .icon-text-width:before, .icon-text-height:before, .icon-italic:before, .icon-bold:before, .icon-font:before, .icon-camera:before, .icon-print:before, .icon-bookmark:before, .icon-book:before, .icon-tags:before, .icon-tag:before, .icon-qrcode:before, .icon-volume-up:before, .icon-volume-down:before, .icon-volume-off:before, .icon-headphones:before, .icon-flag:before, .icon-lock:before, .icon-list-alt:before, .icon-refresh:before, .icon-repeat:before, .icon-upload:before, .icon-download:before, .icon-download-alt:before, .icon-road:before, .icon-time:before, .icon-file:before, .icon-home:before, .icon-trash:before, .icon-cog:before, .icon-signal:before, .icon-off:before, .icon-zoom-out:before, .icon-zoom-in:before, .icon-remove:before, .icon-th-list:before, .icon-th:before, .icon-th-large:before, .icon-film:before, .icon-user:before, .icon-star-empty:before, .icon-star:before, .icon-heart:before, .icon-envelope:before, .icon-search:before, .icon-music:before, .icon-glass:before {
   font-family: "icomoon";
@@ -1769,6 +1769,7 @@ Fonts
   src: url("fonts/verb/VerbBlack-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/verb/VerbBlack-webfont.woff") format("woff"), url("fonts/verb/VerbBlack-webfont.ttf") format("truetype"), url("fonts/verb/VerbBlack-webfont.svg#verb_blackregular") format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "verb_regularregular";
@@ -1776,6 +1777,7 @@ Fonts
   src: url("fonts/verb/VerbRegular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/verb/VerbRegular-webfont.woff") format("woff"), url("fonts/verb/VerbRegular-webfont.ttf") format("truetype"), url("fonts/verb/VerbRegular-webfont.svg#verb_regularregular") format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "verb_semiboldregular";
@@ -1783,6 +1785,7 @@ Fonts
   src: url("fonts/verb/VerbSemibold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/verb/VerbSemibold-webfont.woff") format("woff"), url("fonts/verb/VerbSemibold-webfont.ttf") format("truetype"), url("fonts/verb/VerbSemibold-webfont.svg#verb_semiboldregular") format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 /* =============================================================================
 Animation
@@ -1811,14 +1814,14 @@ Animation
 Goaty Homepage
 ========================================================================== */
 .home {
-  background: #353634 url("../img/goat-2014-sm.jpg") top center no-repeat fixed;
+  background: #353634 url("../img/goat-2014-sm.webp") top center no-repeat fixed;
   font-family: "Verb", helvetica, arial, sans-serif;
   background-size: cover;
   /**** Page elements ****/
 }
 @media screen and (min-width: 1200px) {
   .home {
-    background: #353634 url("../img/goat-2017.jpg") center center no-repeat fixed;
+    background: #353634 url("../img/goat-2017.webp") center center no-repeat fixed;
   }
 }
 .home h1, .home h2, .home h3, .home h4, .home h5, .home h6 {
