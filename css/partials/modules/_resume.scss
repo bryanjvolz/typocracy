@@ -18,7 +18,7 @@ Resume
     margin: 3rem auto;
     padding: 0 5%;
 
-    @media #{$bp-mid}{
+    @media #{$bp-mid} {
       padding: 0 2.5%;
     }
 
@@ -112,6 +112,7 @@ Resume
 
   h1, h2, h3, h4, h5 {
     font-family: $verb-black;
+    font-weight: normal;
   }
 
   h1 {
@@ -130,6 +131,7 @@ Resume
     dt {
       font-family: $verb-black;
       font-size: 1.35rem;
+      font-weight: normal;
     }
     dd {
       margin-left: 0;
