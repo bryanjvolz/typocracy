@@ -45,6 +45,11 @@ Goaty Homepage
     transition: .5s ease all;
     width: 95%;
 
+    @media (prefers-reduced-motion) {
+      animation: none;
+      transition: none;
+    }
+
     @media #{$bp-small}{
       margin: 2em 0 0 2em;
       padding: .75em;

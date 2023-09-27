@@ -107,6 +107,10 @@ Resume
       transition: $transition-bounce;
       width: calc(100% + 0.3em);
       z-index: -1;
+
+      @media (prefers-reduced-motion) {
+        transition: none;
+      }
     }
   }
 
@@ -206,6 +210,10 @@ Resume
   color: rgba(0,0,0,.55);
   text-decoration: none;
   transition: $transition;
+
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 
   &:after {
     display: none;
